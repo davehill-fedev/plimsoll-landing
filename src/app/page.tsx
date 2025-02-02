@@ -21,7 +21,7 @@ export default function Home() {
           <p>Plimsoll can provide an unbiased valuation report on your business, delivered straight to your inbox - within 72 hours</p>
           <p className="my-2">Commissioning a confidential Plimsoll Valuation Report on your business will give a fully independent view of what it is currently worth and a 5 year value trend analysis. All in one convenient report, for a fixed price and without any hassle. </p>
           <p>Plimsoll has valued more than 40,000 clients in over 96 countries, across thousands of different industries. Our clients use their Plimsoll Valuation Report for: </p>
-          <Image src="/images/list.jpg" className="list" alt="list" width={600} height={150} className="my-4 w-[30rem]" />
+          <Image src="/images/list.jpg"  alt="list" width={600} height={150} className="my-4 w-[30rem]" />
         </article>
         <div className="p-4 md:relative">
           <Image src="/images/valuation-english.jpg"  alt="Report" width={1200} height={250} />

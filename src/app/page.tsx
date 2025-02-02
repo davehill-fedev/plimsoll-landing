@@ -1,101 +1,61 @@
 import Image from "next/image";
+import { FaBookOpenReader, FaPeopleGroup, FaGlobe } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+   <>
+    <section className="p-4 full-bleed ">
+      <div className="relative flex justify-center items-center">
+        <Image src="/images/buildings-1867775_1280.jpg"  alt="Report" width={1200} height={250} className="w-full max-h-[40rem]" />
+      </div>
+        <div className="lg:absolute  lg:top-[50%] lg:top-[30%] lg:left-[25%] opacity-90  bg-blue-950 text-white mlg:w-1/2 mx-auto p-2 md:p-4 lg:p-2 h-1/2 flex flex-col justify-center items-center">
+        <span className="text-xl lg:text-3xl xl:text-5xl font-semibold">Plimsoll's Business Valuation Service</span>
+        <p className="my-2">What is your business worth? Get a confidential valuation report on your business within 72 hours.</p>
+        <p className="my-4"><a href="/" className="bg-red-600 my-4 text-white md:text-2xl px-4 py-2 rounded-md shadow-md shadow-red-700">Request a sample</a></p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </section>
+    <section className="md:w-1/2 md:mx-auto">
+      <h1 className="text-2xl lg:text-6xl font-semibold my-4">Private and confidential business valuations delivered to your inbox</h1>
+      <article className="grid md:grid-cols-3 p-4">
+        <article className=" p-4 md:col-span-2">
+          <p>Plimsoll can provide an unbiased valuation report on your business, delivered straight to your inbox - within 72 hours</p>
+          <p className="my-2">Commissioning a confidential Plimsoll Valuation Report on your business will give a fully independent view of what it is currently worth and a 5 year value trend analysis. All in one convenient report, for a fixed price and without any hassle. </p>
+          <p>Plimsoll has valued more than 40,000 clients in over 96 countries, across thousands of different industries. Our clients use their Plimsoll Valuation Report for: </p>
+          <Image src="/images/list.jpg" className="list" alt="list" width={600} height={150} className="my-4 w-[30rem]" />
+        </article>
+        <div className="p-4 md:relative">
+          <Image src="/images/valuation-english.jpg"  alt="Report" width={1200} height={250} />
+        </div>
+      </article>
+    </section>
+    <section className="md:w-1/2 md:mx-auto ">
+      <div className="full-bleed bg-[#f9fbfc] flex justify-center items-center">
+        <Image src="/images/video.jpg"  alt="Report" width={1200} height={250} />
+      </div>
+    </section>
+    <section className="md:w-1/2 md:mx-auto">
+      <Image src="/images/faq.jpg"  alt="Report" width={1200} height={250} />
+    </section>
+    <section className="md:w-1/2 md:mx-auto">
+    <h2 className="text-2xl lg:text-3xl font-semibold my-4 text-center">Why choose us?</h2>
+      <div className="md:w-2/3 md:mx-auto grid grid-cols-3 gap-4">
+        <div className="p-4  flex flex-col justify-center items-center text-center">
+        <FaBookOpenReader className="text-7xl" />
+          <h3 className="text-2xl font-bold">37 Years</h3>
+          <span className="font-semibold">of experience</span>
+        </div>
+        <div className="p-4  flex flex-col justify-center items-center text-center">
+        <FaPeopleGroup className="text-7xl" />
+          <h3 className="text-2xl font-bold">40,000</h3>
+          <span className="font-semibold">clients</span>
+        </div>
+        <div className="p-4  flex flex-col justify-center items-center text-center">
+        <FaGlobe  className="text-7xl"/>
+          <h3 className="text-2xl font-bold">Operating</h3>
+          <span className="font-semibold">worldwide</span>
+        </div>
+      </div>
+    </section>
+   </>
   );
 }

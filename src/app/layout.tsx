@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +15,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className="h-full">
+      <body className="grid grid-rows-[auto_1fr_auto] h-screen">
+        <header className="px-4 py-6">
+          <div className="lg:w-1/2 lg:mx-auto flex justify-between items-center">
+            <div>
+              <Image src="/images/plimsoll-logo.jpg" alt="Plimsoll Logo" width={200} height={50} />
+            </div>
+            <div>
+              <a href="/" className="bg-[#163d76] text-white lg:text-2xl px-4 py-2 rounded-md shadow-md shadow-blue-400">Speak to us</a>
+            </div>
+          </div>
+        </header>
+        <main>
+          {children}
+        </main>
+        <footer className="px-4 py-6 flex justify-center items-center">
+          <p>© {new Date().getFullYear()} All rights reserved</p>
+        </footer>
       </body>
     </html>
   );

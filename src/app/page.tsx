@@ -8,7 +8,7 @@ export default function Home() {
       <div className="relative flex justify-center items-center">
         <Image src="/images/buildings-1867775_1280.jpg"  alt="Report" width={1200} height={250} className="w-full max-h-[40rem]" />
       </div>
-        <div className="lg:absolute  lg:top-[50%] lg:top-[30%] lg:left-[25%] opacity-90  bg-blue-950 text-white mlg:w-1/2 mx-auto p-2 md:p-4 lg:p-2 h-1/2 flex flex-col justify-center items-center">
+        <div className="lg:absolute  lg:top-[30%] lg:top-[30%] lg:left-[30%] opacity-90  bg-blue-950 text-white mlg:w-1/2 mx-auto p-2 md:p-4 lg:p-2 h-1/2 flex flex-col justify-center items-center">
         <span className="text-xl lg:text-3xl xl:text-5xl font-semibold">Plimsoll's Business Valuation Service</span>
         <p className="my-2">What is your business worth? Get a confidential valuation report on your business within 72 hours.</p>
         <p className="my-4"><a href="/" className="bg-red-600 my-4 text-white md:text-2xl px-4 py-2 rounded-md shadow-md shadow-red-700">Request a sample</a></p>
